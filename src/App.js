@@ -11,9 +11,8 @@ const App=()=> {
     const data = await res.data;
     const randElem = data[Math.floor(Math.random()*data.length)]
     setSolution(randElem.word);
-    console.log(data);
-   
-      
+  
+     
     }catch(e){
       console.log(e);
     }
